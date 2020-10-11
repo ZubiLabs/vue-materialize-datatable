@@ -10,7 +10,7 @@
 					@click="button.onclick"
 				>
 					<i v-if="button.showicon" class="material-icons">{{ button.icon }}</i>
-					<div v-else>{{ button.customhtml }}</div>
+					<div v-else v-html="button.customhtml"></div>
 				</a>
 				<a v-if="printable"
 					href="javascript:undefined"

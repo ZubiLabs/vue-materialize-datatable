@@ -9,7 +9,8 @@
 					class="waves-effect btn-flat nopadding"
 					@click="button.onclick"
 				>
-					<i class="material-icons">{{ button.icon }}</i>
+					<i v-if="button.showicon" class="material-icons">{{ button.icon }}</i>
+					<div v-else>{{ button.customhtml }}</div>
 				</a>
 				<a v-if="printable"
 					href="javascript:undefined"

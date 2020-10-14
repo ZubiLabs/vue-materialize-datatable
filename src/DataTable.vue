@@ -1,5 +1,5 @@
 <template>
-	<div class="card material-table" ref="table">
+	<div :class="tableclasses" ref="table">
 		<div class="table-header">
 			<span class="table-title">{{ title }}</span>
 			<div class="actions">

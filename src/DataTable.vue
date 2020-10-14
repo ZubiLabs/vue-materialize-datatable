@@ -262,6 +262,12 @@
 				required: false,
 				default: true,
 			},
+			
+			tableclasses: {
+				type: String,
+				required: false,
+				default: 'card material-table',
+			},
 
 		},
 
